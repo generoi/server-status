@@ -20,7 +20,7 @@ Usage:
   $(basename $0) -i ~/.ssh/id_rsa foo@bar.com
     All options passed will be delegated to the ssh command.
 
-  drush @production ssh < \$(which server-status)
+  drush @production ssh bash -s < \$(which server-status)
     Run the command on a remote drush site alias.
 
 Options:
